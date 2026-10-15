@@ -1,5 +1,87 @@
-<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>খাঁটি বাজার (ডেমো)</title><link rel="stylesheet" href="style.css"></head><body>
-<div class="demo">⚠️ ডেমো সাইট — পণ্য ও পেমেন্ট আসল নয়</div>
-<header><a href="#/" class="logo">🌿 খাঁটি বাজার</a><a href="#/cart" class="cartbtn">🛒 <span id="cc">0</span></a></header>
-<main id="app"></main><footer>© খাঁটি বাজার · ডেমো · 📞 01XXXXXXXXX</footer>
-<script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0e7a45">
+<meta name="description" content="খাঁটি বাজার — মধু, ঘি, সরিষার তেল, খেজুর ও মসলা। ক্যাশ অন ডেলিভারি। ডেমো দোকান।">
+<title>খাঁটি বাজার — খাঁটি মধু, ঘি ও মসলা</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span>ঢাকায় ৳১,৫০০+ অর্ডারে ফ্রি ডেলিভারি</span>
+    <span class="tb-demo">ডেমো সাইট — পণ্য ও পেমেন্ট আসল নয়</span>
+    <a href="tel:01700000000">হটলাইন ০১৭০০-০০০০০০</a>
+  </div>
+</div>
+<header class="header" id="siteHeader">
+  <div class="wrap head-row">
+    <button class="icon-btn burger" id="burger" type="button" aria-label="মেনু" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <a class="logo" href="#/">
+      <span class="logo-mark" aria-hidden="true">খ</span>
+      <span class="logo-text"><strong>খাঁটি বাজার</strong><small>খাঁটি খাবারের দোকান</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="মধু, ঘি, তেল, খেজুর খুঁজুন…" autocomplete="off" enterkeyhint="search">
+      <button type="submit">খুঁজুন</button>
+    </form>
+    <a class="cart-link" href="#/cart">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.6 9H7.2L6 6z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+      <span class="cart-label">কার্ট</span>
+      <span class="badge" id="cc">০</span>
+    </a>
+  </div>
+  <nav class="nav" id="nav">
+    <div class="wrap nav-in" id="navIn"></div>
+  </nav>
+</header>
+<main id="app"></main>
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo foot-logo" href="#/"><span class="logo-mark">খ</span><span class="logo-text"><strong>খাঁটি বাজার</strong><small>খাঁটি খাবারের দোকান</small></span></a>
+      <p>মধু, ঘি, ঘানি ভাঙা তেল, খেজুর ও মসলা — বাছাই করে ঘরে পৌঁছে দিই। এটি একটি ডেমো দোকান, অর্ডার আসল নয়।</p>
+    </div>
+    <div>
+      <h3>দ্রুত লিংক</h3>
+      <a href="#/">দোকান</a>
+      <a href="#/cart">কার্ট</a>
+      <a href="#/checkout">চেকআউট</a>
+      <a href="#offer" data-offer>আজকের অফার</a>
+    </div>
+    <div>
+      <h3>যোগাযোগ</h3>
+      <p>হটলাইন: <a href="tel:01700000000">০১৭০০-০০০০০০</a><br>সময়: সকাল ৯টা – রাত ৯টা<br>ঢাকা, বাংলাদেশ</p>
+      <div class="social" aria-label="সামাজিক মাধ্যম">
+        <a href="#/" aria-label="ফেসবুক"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg></a>
+        <a href="#/" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+        <a href="tel:01700000000" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.1-1.1A8 8 0 1 0 12 4z"/><path d="M9 10.5c.2 1.6 1.8 3.2 3.4 3.6.4.1.8 0 1.1-.3l.6-.7-1.2-.7-.5.4c-.8-.4-1.5-1.1-1.8-1.8l.5-.4-.8-1.2-.6.6c-.3.3-.4.7-.5 1.1z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3>পেমেন্ট</h3>
+      <div class="pays">
+        <span class="chip-pay bkash">bKash</span>
+        <span class="chip-pay nagad">Nagad</span>
+        <span class="chip-pay cod">COD</span>
+      </div>
+      <p class="fine">ক্যাশ অন ডেলিভারি, বিকাশ ও নগদ — এই সাইটে সবই ডেমো।</p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© খাঁটি বাজার · ডেমো</span>
+    <span>ছবি: Unsplash ও Wikimedia Commons (CC BY-SA)</span>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
