@@ -102,7 +102,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(28,25,23,.04);display:flex;flex-direction:column;transition:transform .2s, box-shadow .2s}
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
-.thumb{position:relative;background:#f6f4f0;display:block;aspect-ratio:2 / 1;overflow:hidden}
+.thumb{position:relative;background:#f6f4f0;display:block;aspect-ratio:2 / 1.19;overflow:hidden}
 .thumb img{position:absolute;top:5%;left:5%;width:90%;height:90%;object-fit:contain;object-position:center}
 .badge-off,.badge-new{position:absolute;top:10px;z-index:1;font-size:12px;font-weight:700;padding:3px 8px;border-radius:999px}
 .badge-off{left:10px;background:var(--sale);color:#fff}
