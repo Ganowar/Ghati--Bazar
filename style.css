@@ -1,0 +1,19 @@
+*{box-sizing:border-box}body{margin:0;font-family:"Hind Siliguri","Noto Sans Bengali",Hind,sans-serif;background:#f6f8f4;color:#222;font-size:16px}
+.demo{background:#fff3cd;color:#7a5b00;text-align:center;font-size:13px;padding:4px}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#1b5e20;color:#fff}
+header a{color:#fff;text-decoration:none;font-weight:700;font-size:20px}.cartbtn{background:#fff2;padding:8px 14px;border-radius:24px}
+main{max-width:900px;margin:auto;padding:12px}
+.hero{background:linear-gradient(135deg,#2e7d32,#81c784);color:#fff;border-radius:18px;padding:22px}.hero h1{margin:0 0 6px;font-size:24px}.hero p{margin:0}
+input,select,textarea{width:100%;padding:14px;border:1px solid #ccc;border-radius:12px;font:inherit;margin:6px 0 10px;background:#fff}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}.chip{flex:none;padding:10px 16px;border-radius:22px;border:1px solid #2e7d32;background:#fff;color:#2e7d32;font:inherit}.chip.on{background:#2e7d32;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px #0001;display:flex;flex-direction:column}.card img{width:100%;aspect-ratio:1;display:block}
+.card .b{padding:10px;flex:1;display:flex;flex-direction:column;gap:4px}.card h3{margin:0;font-size:16px}.u{color:#777;font-size:13px}
+.price{color:#1b5e20;font-weight:700;font-size:18px}.old{color:#999;text-decoration:line-through;font-size:13px;margin-left:6px}
+.btn{display:block;width:100%;padding:14px;border:0;border-radius:12px;background:#2e7d32;color:#fff;font:inherit;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;margin-top:auto}.btn.alt{background:#fff;color:#2e7d32;border:2px solid #2e7d32}
+.row{display:flex;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:10px;margin-bottom:10px}.row img{width:70px;height:70px;border-radius:10px}.row .f{flex:1}
+.q{display:flex;align-items:center;gap:6px}.q button{width:40px;height:40px;border-radius:50%;border:1px solid #2e7d32;background:#fff;font-size:20px;color:#2e7d32}
+.box{background:#fff;border-radius:16px;padding:16px;margin:12px 0}.tot{display:flex;justify-content:space-between;margin:4px 0}.tot.big{font-weight:700;font-size:19px}
+.pay label{display:flex;gap:10px;align-items:center;border:1px solid #ccc;border-radius:12px;padding:14px;margin:8px 0}.pay input{width:22px;margin:0}
+.detail img{width:100%;max-width:420px;border-radius:18px;display:block;margin:auto}.ok{text-align:center;font-size:60px}
+footer{text-align:center;color:#888;font-size:13px;padding:20px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:12px 20px;border-radius:24px}
