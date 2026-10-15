@@ -8,19 +8,20 @@ const DELIV = 60;
 const CATS = ["সব", ...new Set(PRODUCTS.map(p => p.cat))];
 const CAT_ICON = {
   "সব": ["✦", "#e7f6ee"],
-  "মধু ও ঘি": ["🍯", "#fff4d6"],
+  "তাজা ফল": ["🍎", "#fde8e8"],
+  "ঘি": ["🫙", "#fff4d6"],
   "তেল": ["🫙", "#e8f7ef"],
   "খেজুর ও বাদাম": ["🌰", "#fdecdc"],
   "চাল ও ডাল": ["🌾", "#eef2ff"],
   "মসলা": ["🌶️", "#fde8e8"]
 };
 const SLIDES = [
-  {img:"img/banner-honey.jpg", kicker:"নতুন মৌসুম", title:"সুন্দরবনের খাঁটি মধু", text:"চাক থেকে সংগ্রহ করা মধু, এখন ঘরে পৌঁছে যাবে।", cta:"মধু দেখুন", cat:"মধু ও ঘি"},
-  {img:"img/banner-ghee.jpg", kicker:"দুধের ঘি", title:"গাওয়া ঘি, এখনই নিন", text:"দেশি গরুর দুধ থেকে তৈরি। ভাত ও রুটিতে সুগন্ধ।", cta:"ঘি দেখুন", cat:"মধু ও ঘি"},
+  {img:"img/banner-honey.jpg", kicker:"মৌসুমি", title:"তাজা ফল", text:"বাছাই করা ফল, এখন ঘরে পৌঁছে যাবে।", cta:"ফল দেখুন", cat:"তাজা ফল"},
+  {img:"img/banner-ghee.jpg", kicker:"দুধের ঘি", title:"গাওয়া ঘি, এখনই নিন", text:"দেশি গরুর দুধ থেকে তৈরি। ভাত ও রুটিতে সুগন্ধ।", cta:"ঘি দেখুন", cat:"ঘি"},
   {img:"img/banner-dates.jpg", kicker:"প্রিমিয়াম", title:"আজওয়া খেজুর ও বাদাম", text:"বাছাই করা দানা। সারা বাংলাদেশে ডেলিভারি।", cta:"দেখে নিন", cat:"খেজুর ও বাদাম"},
   {img:"img/banner-spice.jpg", kicker:"আজকের অফার", title:"মসলায় ছাড় চলছে", text:"হলুদ ও মরিচ — রং মেশানো নেই, স্বাদ আসল।", cta:"অফার দেখুন", cat:"মসলা"}
 ];
-const MARQUEE = ["খাঁটি মধু", "গাওয়া ঘি", "ঘানি ভাঙা তেল", "ক্যাশ অন ডেলিভারি", "বিকাশ ও নগদ", "সারা দেশে ডেলিভারি", "১০০% খাঁটি"];
+const MARQUEE = ["তাজা ফল", "গাওয়া ঘি", "ঘানি ভাঙা তেল", "ক্যাশ অন ডেলিভারি", "বিকাশ ও নগদ", "সারা দেশে ডেলিভারি", "১০০% খাঁটি"];
 
 let cart = JSON.parse(localStorage.cart || "{}");
 let cat = "সব";
@@ -245,7 +246,7 @@ const sub = () => Object.entries(cart).reduce((a, [i, n]) => a + (P(i) ? P(i).pr
 function cartV(){
   const entries = Object.entries(cart).filter(([i]) => P(i));
   if (!entries.length){
-    $("#app").innerHTML = `<div class="wrap page"><div class="box center"><h1>কার্ট খালি</h1><p class="unit">মধু, ঘি বা মসলা যোগ করুন।</p><a class="btn" href="#/">কেনাকাটা করুন</a></div></div>`;
+    $("#app").innerHTML = `<div class="wrap page"><div class="box center"><h1>কার্ট খালি</h1><p class="unit">তাজা ফল, ঘি বা মসলা যোগ করুন।</p><a class="btn" href="#/">কেনাকাটা করুন</a></div></div>`;
     return;
   }
   $("#app").innerHTML = `<div class="wrap page"><h1>আপনার কার্ট</h1>
